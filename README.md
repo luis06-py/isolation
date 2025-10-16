@@ -15,7 +15,6 @@ En el fichero `config/dhcp.txt` se debe escribir el código inicial para la conf
 ## Uso
 Al ejecutar el script, este verificará el funcionamiento de determinados paquetes. (no es necesario instalarlos todos.
 Dentro se debe escoger una opción)
-Dentro se 
 
 Al ejecutar el script, este verificará el funcionamiento de ciertos paquetes necesarios (no es obligatorio tener todos instalados).
 
