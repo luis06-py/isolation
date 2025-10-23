@@ -57,12 +57,12 @@ def check():
 			subprocess.run(["sudo", "apt", "install"] + lista)
 			print(Fore.VERDE+"Instalación completada, reinicia el script."+Fore.VERDE)
 		else:
-			print("Se ignorará la instalación, algunas funciones pueden no funcionar...")
+			print("Se ignorará la instalación, algunas funciones no podrían funcionar...")
 
 if __name__ == '__main__':
 	print ("I S O L A T I O N\n\n")
 	if not os.geteuid() == 0:
-		print(Fore.AMARILLO+"¡Script abierto sin permisos de SUDO! Algunas funciones pueden no funcionar."+Fore.RESET)
+		print(Fore.AMARILLO+"¡Script abierto sin permisos de SUDO! Algunas funciones no podrían funcionar."+Fore.RESET)
 		time.sleep(2)
 	print("Verificando paquetes...")
 

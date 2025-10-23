@@ -1,4 +1,5 @@
 import subprocess, os, shutil
+from datetime import datetime
 
 def obtenerInterfaces():
 	interfaces = [line.split(':')[1].split('@')[0].strip()
@@ -56,7 +57,8 @@ def aplicarNetplan():
 						break
 					print ("Selección inválida")
 		original = os.path.join(netplan_dir, selec)
-		backup = os.path.join(netplan_dir, selec + ".backup")
+		formato = datetime.now().strftime("%d%m%Y%H%M")
+		backup = os.path.join(netplan_dir, selec + formato + ".backup")
 		output = './output/file.yaml'
 		os.rename(original, backup)
 		print (f"Creado backup de {original} como {backup}")
